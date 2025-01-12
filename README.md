@@ -135,7 +135,7 @@ MCC of 0.89 and lower false positive rate (FPR = 0.9%).
 
    
 
-### **GridSearch Cross-Validation (CV) Benchmarking**
+### **5-fold GridSearch Cross-Validation (CV) and Benchmarking**
    - **Setup**: 
      - Data was split into an **80% training set** (for CV) and a **20% hold-out** benchmarking set.
      
