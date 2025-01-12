@@ -13,7 +13,7 @@ Comparing Support Vector Machines (machine learning) and Position-specific Weigh
 Signal peptides (SPs) are short peptides located at the N-terminus of proteins, carrying information for protein
 secretion. SPs gained attention in several scientific and industrial applications, including recombinant protein production and immunization. Therefore, since the dawn of bioinformatics, the prediction of signal peptides and protein subcellular location has been one of the main focal points. In this work two different sequence-based methods for eukaryotes SP proteins classification were implemented. A support vector machine (SVM) classifier trained with a combination of features describing residue composition and local hydrophobicity. The position-specific weight matrix (PSWM) method based on von Heijne (VH) method was implemented for comparison.
 
-**Aim**: This project aimed to compare the performance of two sequence-based methods, Support Vector Machine (SVM) and Position-Specific Weight Matrix (PSWM), for predicting signal peptides (SPs) in eukaryotic proteins (binary classification).
+**Aim**: Compare the performance of two sequence-based methods, Support Vector Machine (SVM) and Position-Specific Weight Matrix (PSWM), for predicting signal peptides (SPs) in eukaryotic proteins (binary classification).
 
 **Methods**: Eukaryotic protein sequences were collected from UniProtKB/SwissProt. Both SVM (using features like residue composition and hydrophobicity) and PSWM models were trained and optimized using 5-fold GridSearchCV and benchmarked on a hold-out test set.
 
