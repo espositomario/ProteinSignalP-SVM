@@ -1,7 +1,9 @@
 
-# Signal Peptide Prediction in Eukaryotes: SVM vs. PSWM
+# Signal peptide prediction in eukaryotes: a comparison of SVM with a PSWM-based method
 
-This repository contains the code and report for the project **["Signal peptide prediction in eukaryotes: a comparison of SVM with a PSWM-based method"](./Report.pdf)**, which evaluates two sequence-based approaches for classifying signal peptide (SP) proteins.
+Comparing Support Vector Machines (machine learning) and Position-specific Weight Matrix  (statistical) methods for predicting Signal Peptides in eukaryotic Proteins Sequences. Hyperparameter optimization was performed using GridSearch Cross-Validation, and Feature Importance analysis identified key predictive features.
+
+-> **[Full report PDF](./Report.pdf)**
 
 ![Signal Peptide general composition](./images/SignalPeptide.png)
 ![Graphical Abstract](./images/GraphicalAbstract.png)
