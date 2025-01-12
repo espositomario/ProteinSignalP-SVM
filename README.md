@@ -8,14 +8,14 @@ This repository contains the code and report for the project **["Signal peptide 
 
 
 ## Overview
-Signal peptides are short N-terminal sequences that direct proteins into the secretory pathway. Accurate prediction of these sequences is crucial for understanding protein localization and function. This project implements and benchmarks:
-- **Support Vector Machine (SVM)**: A machine learning model leveraging sequence-derived features.
-- **Position-Specific Weight Matrix (PSWM)**: A probabilistic model based on the von Heijne (VH) method.
+Signal peptides (SPs) are short peptides located at the N-terminus of proteins, carrying information for protein
+secretion. SPs gained attention in several scientific and industrial applications, including recombinant protein production and immunization. Therefore, since the dawn of bioinformatics, the prediction of signal peptides and protein subcellular location has been one of the main focal points. In this work two different sequence-based methods for eukaryotes SP proteins classification were implemented. A support vector machine (SVM) classifier trained with a combination of features describing residue composition and local hydrophobicity. The position-specific weight matrix (PSWM) method based on von Heijne (VH) method was implemented for comparison.
 
+**Aim**: This project aimed to compare the performance of two sequence-based methods, Support Vector Machine (SVM) and Position-Specific Weight Matrix (PSWM), for predicting signal peptides (SPs) in eukaryotic proteins (binary classification).
 
+**Methods**: Eukaryotic protein sequences were collected from UniProtKB/SwissProt. Both SVM (using features like residue composition and hydrophobicity) and PSWM models were trained and optimized using 5-fold GridSearchCV and benchmarked on a hold-out test set.
 
-**Results**: VH method achieved a Matthew’s correlation coefficient of 0.68, while SVM method outperformed VH with an
-MCC of 0.89 and lower false positive rate (FPR = 0.9%).
+**Results**: The SVM method significantly outperformed the PSWM method in predicting signal peptides. SVM achieved a Matthews Correlation Coefficient (MCC) of 0.89 and a false positive rate (FPR) of 0.9%, compared to an MCC of 0.68 and FPR of 3.4% for PSWM, demonstrating the superior accuracy of the machine learning approach.
 
 ***Disclaimer**: This project was developed as part of the Master's degree course Laboratory of Bioinformatics 2. This project  highlights the practical application of classical machine learning and statistical methods, providing a foundational understanding of the challenges and opportunities in sequence-based classification tasks.It is important to note that the objective was not to produce a state-of-the-art predictor but to gain hands-on experience in designing, training, and benchmarking bioinformatics models. Sophisticated predictors, such as SignalP 6.0, leverage advanced techniques like protein language models (pLMs) and deep learning, setting a much higher standard for signal peptide prediction.*
 
@@ -198,6 +198,7 @@ MCC of 0.89 and lower false positive rate (FPR = 0.9%).
 | :------ | :---- | :------- | :-------- | :-------|
 | Q90WJ9  | 1     | training | 0         | MGAVPGVVLLLML...  |
 | P22301  | 1     | training | 0         | MHSSALLCCLVLLT...  |
+| ...  | ...    | ... | ...         | ...  |
 
 
 
